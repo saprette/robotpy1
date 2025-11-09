@@ -1,6 +1,17 @@
-# Rapport d’activité
+---
+title: Rapport d’activité 2024-2025
+---
 
-## 1er HACKATHON Thionville - Mercredi 28 mai 2025 - Puzzle Thionville
+# Fête de la science 
+## Dimanche 13 octobre 2024
+## Uckange
+
+![img_25.png](img_25.png)
+
+
+# 1er HACKATHON
+## Mercredi 28 mai 2025
+## Puzzle Thionville
 
 Le premier hackathon a rencontré un succès inattendu.
 
@@ -14,34 +25,38 @@ Aussitôt ouvertes, les inscriptions ont dû être closes, tant les candidats é
 ![img_23.png](img_23.png)
 ![img_24.png](img_24.png)
 
-## TECHNOBOT - Vendredi 13 juin 2025 - Yutz
+# TECHNOBOT
+## Vendredi 13 juin 2025
+## Yutz
 
 Comme chaque année, les collèges et lycées ont répondu présents.
 
 Cette édition a été marquée par de très fortes chaleurs sous le toit du gymnase du collège Mermoz…
 
-Néanmoins, toutes les présentations, démonstrations et duels se sont déroulés comme prévu.  
+Néanmoins, toutes les présentations, démonstrations et duels se sont déroulés comme prévu.
 
 ![img_19.png](img_19.png)
 ![img_15.png](img_15.png)
 ![img_16.png](img_16.png)
 
-## La Thionvilloise - Dimanche 15 juin 2025 - Thionville
+# La Thionvilloise
+## Dimanche 15 juin 2025
 
 Marche/course organisée par Les Dames de Cœur, pour aider à la lutte contre le cancer.
 
 Comme chaque année, Techtic&Co a animé un stand à destination des enfants.
 
-Au programme de cette édition : manipulation de drones et démonstration de robots.  
+Au programme de cette édition : manipulation de drones et démonstration de robots.
 
 ![img_13.png](img_13.png)
 ![img_12.png](img_12.png)
 
-## Journée PÉRISCOLAIRE - Mercredi 7 mai 2025 – Thionville
+# Journée PÉRISCOLAIRE
+## Mercredi 7 mai 2025
 
-Un groupe d’enfants de la Maison des Quartiers est venu découvrir les sciences au Thilab.  
+Un groupe d’enfants de la Maison des Quartiers est venu découvrir les sciences au Thilab.
 
-Au menu : chimie et biologie.  
+Au menu : chimie et biologie.
 
 ![img_9.png](img_9.png)
 
@@ -50,8 +65,8 @@ Les enfants ont pu réaliser quelques expériences ludiques et utiliser nos micr
 ![img_10.png](img_10.png)
 ![img_11.png](img_11.png)
 
-
-## Ateliers scientifiques - Mercredi 15h30 à 17h - Thionville
+# Ateliers scientifiques
+## Mercredi 15h30 à 17h
 
 - 14 séances de sciences
   - Chimie, fabrication, électronique, robotique, biologie
@@ -60,12 +75,12 @@ Les enfants ont pu réaliser quelques expériences ludiques et utiliser nos micr
 ![img_1.png](img_1.png)
 ![img_2.png](img_2.png)
 
+# Ateliers de robotique
+## Mercredi 14h à 15h30
 
-## Ateliers de robotique - Mercredi 14h à 15h30 - Thionville
+Cet atelier est proposé par le Radioclub Scientifique de Thionville F8KGY et par Techtic&Co.
 
-Cet atelier est proposé par le Radioclub Scientifique de Thionville F8KGY et par Techtic&Co.  
-
-Les enfants sont pris en charge alternativement par Techtic&Co et par F8KGY.  
+Les enfants sont pris en charge alternativement par Techtic&Co et par F8KGY.
 
 - Techtic & Co
   - Débutants
@@ -82,7 +97,12 @@ Les enfants sont pris en charge alternativement par Techtic&Co et par F8KGY.
 ![img_7.png](img_7.png)
 ![img_8.png](img_8.png)
 
+#
 
-## THILAB
+---
+THILAB
+---
 
-## FESTHI’SCIENCES
+---
+FESTHI’SCIENCES
+---
