@@ -37,6 +37,7 @@ line_sensor_14 = machine.Pin(14, machine.Pin.IN, machine.Pin.PULL_DOWN)  # cente
 line_sensor_15 = machine.Pin(15, machine.Pin.IN, machine.Pin.PULL_DOWN)  # left
 line_sensor_20 = machine.Pin(20, machine.Pin.IN, machine.Pin.PULL_DOWN)  # left edge
 
+
 class SensorPosition:
     RIGHT_EDGE = "RIGHT_EDGE"
     RIGHT = "RIGHT"
@@ -114,6 +115,7 @@ def get_distance():
     print(f"Distance = {distance:.2f} cm")
     return distance
 
+
 def _calculate_duty_cycle(speed):
     """
     Calculates the PWM duty cycle from a speed percentage (0-100).
@@ -129,6 +131,7 @@ def _calculate_duty_cycle(speed):
 
     print(f"Calculated duty cycle for speed {speed}%: {duty_value}")
     return duty_value
+
 
 def left_motor_forward(speed=speed_car):
     """Sets the left motor to move forward at a given speed percentage."""
@@ -158,14 +161,58 @@ def right_motor_backward(speed=speed_car):
     pwm4.duty_u16(duty_value)
 
 
-def forward(speed=speed_car):
-    right_motor_forward(speed)
-    left_motor_forward(speed)
+def forward(speed=speed_car, angle=0):
+    """
+    Moves the robot forward with optional steering angle.
+    - speed: Base speed percentage (0-100)
+    - angle: Steering angle in degrees (-45 to 45)
+             Negative angles steer left, positive angles steer right
+    """
+    if not -45 <= angle <= 45:
+        print(f"Error: Angle {angle} must be between -45 and 45 degrees.")
+        return
+
+    # Calculate speed differential based on angle
+    # At 0 degrees: both motors at full speed
+    # At +45 degrees: left motor at full speed, right motor slower (turn right)
+    # At -45 degrees: right motor at full speed, left motor slower (turn left)
+
+    if angle >= 0:
+        # Turning right: reduce right motor speed
+        left_speed = speed
+        right_speed = speed * (1 - abs(angle) / 45)
+    else:
+        # Turning left: reduce left motor speed
+        right_speed = speed
+        left_speed = speed * (1 - abs(angle) / 45)
+
+    right_motor_forward(right_speed)
+    left_motor_forward(left_speed)
 
 
-def backward(speed=speed_car):
-    right_motor_backward(speed)
-    left_motor_backward(speed)
+def backward(speed=speed_car, angle=0):
+    """
+    Moves the robot backward with optional steering angle.
+    - speed: Base speed percentage (0-100)
+    - angle: Steering angle in degrees (-45 to 45)
+             Negative angles steer left, positive angles steer right
+    """
+    if not -45 <= angle <= 45:
+        print(f"Error: Angle {angle} must be between -45 and 45 degrees.")
+        return
+
+    # Calculate speed differential based on angle
+    if angle >= 0:
+        # Turning right: reduce right motor speed
+        left_speed = speed
+        right_speed = speed * (1 - abs(angle) / 45)
+    else:
+        # Turning left: reduce left motor speed
+        right_speed = speed
+        left_speed = speed * (1 - abs(angle) / 45)
+
+    right_motor_backward(right_speed)
+    left_motor_backward(left_speed)
 
 
 def turn_right(speed=speed_car):
